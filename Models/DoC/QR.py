@@ -491,7 +491,7 @@ class QR():
                 f1 += self.questions[skill_level][module]["current_state"][q]
 
         # F2: 1 if f1 >= median number of questions presented by a, 0 otherwise
-        if f1 >= self.n_questions_per_minigame[action]:
+        if f1 >= self.n_questions_per_minigame[action].index(max(self.n_questions_per_minigame[action])):
             f2 = 1
         else:
             f2 = 0

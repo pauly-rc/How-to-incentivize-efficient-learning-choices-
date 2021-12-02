@@ -40,9 +40,9 @@ def get_n_questions_per_skill_level(reduced):
  
 
 def get_number_of_questions_per_minigame(reduced):
-       Returns a dictionary containing a discrete probability distribution P(n_questions = x) for each minigame, describing how likely the game is to present x questions.
+       """Returns a dictionary containing a discrete probability distribution P(n_questions = x) for each minigame, describing how likely the game is to present x questions.
        The probabilites are caluclated from the QR-Data provided by Solve Education. 
-       Param: reduced (boolean): If true, returns mapping for small MDP 
+       Param: reduced (boolean): If true, returns mapping for small MDP """
        if reduced:
               return {  'speak racer': [1., 0., 0., 0. , 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.],
                       'copy cat':   [0., 1., 0., 0., 0. , 0., 0., 0., 0., 0. , 0., 0., 0., 0., 0. , 0., 0., 0.], 
