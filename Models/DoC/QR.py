@@ -131,9 +131,9 @@ class QR():
         self.check()
 
         # sample the number of questions presented by the game form the corresponding distribution
-        #n_question_dist = self.n_questions_per_minigame[minigame]
-        #n_questions = np.random.choice(a = [x for x in range(1,len(n_question_dist)+1)], p = n_question_dist, replace = True)
-        n_questions = self.n_questions_per_minigame[minigame]
+        n_question_dist = self.n_questions_per_minigame[minigame]
+        n_questions = np.random.choice(a = [x for x in range(1,len(n_question_dist)+1)], p = n_question_dist, replace = True)
+        
         
         
         # get the applicable skill level by determining the lowest skill level of those skills trained by the module 

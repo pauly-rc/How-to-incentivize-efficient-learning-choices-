@@ -38,7 +38,7 @@ def get_n_questions_per_skill_level(reduced):
 
 
  
-"""
+
 def get_number_of_questions_per_minigame(reduced):
        Returns a dictionary containing a discrete probability distribution P(n_questions = x) for each minigame, describing how likely the game is to present x questions.
        The probabilites are caluclated from the QR-Data provided by Solve Education. 
@@ -112,31 +112,8 @@ def get_number_of_questions_per_minigame(reduced):
                             0.        , 0.        , 0.        , 0.        , 0.        ,
                             0.        , 0.        , 0.        ]}
 
-"""
-def get_number_of_questions_per_minigame(reduced):
-       if reduced:
-              return {  'speak racer': 1,
-                      'copy cat':   2,
-                     'hello cafe':  1,
-                     "brain battle": 2
-                     }
 
-       return {'fix the mix': 6,
-                     'speak racer': 6,
-                     'copy cat':6 ,
-                     'copy parrot': 6,
-                     'typing time': 6,
-                     'brain battle': 2,
-                     'factory card': 6,
-                     'robot factory': 16,
-                     'word snap':3 ,
-                     'hello cafe':3 ,
-                     'flying robot':5,
-                     'chat time':3 ,
-                     'tick talk': 3,
-                     'eye spy': 1,
-                     'judge me': 1,
-                     "talk n' go": 1}
+                 
 
 def get_minigame_to_skill_mapping(reduced):
        """Returns a nested dictionary. For each minigame, a dictionary containing the skill names as keys and boolean values as items, 
